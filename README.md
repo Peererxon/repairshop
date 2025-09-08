@@ -1,3 +1,39 @@
+# RepairShop Next.js App
+
+Bienvenido al proyecto **RepairShop**, una aplicación web construida con Next.js y TypeScript.
+
+## Estructura del Proyecto
+
+- `src/app/`: Páginas principales y layout global.
+- `src/components/ui/`: Componentes reutilizables de UI (por ejemplo, [`button.tsx`](src/components/ui/button.tsx)).
+- `src/lib/utils.ts`: Funciones utilitarias.
+- `public/`: Archivos estáticos e imágenes.
+
+## Documentación
+
+- [Ejemplos de Uso](./UsageExamples.md)
+- [Registro de Cambios](./ChangeLog.md)
+
+## Clases y Métodos Destacados
+
+- **Button** ([`button.tsx`](src/components/ui/button.tsx)): Componente de botón reutilizable. Ver ejemplo en [UsageExamples.md](./UsageExamples.md#uso-del-componente-button).
+- **Funciones utilitarias** ([`utils.ts`](src/lib/utils.ts)): Métodos auxiliares para la aplicación. Ver ejemplo en [UsageExamples.md](./UsageExamples.md#uso-de-funciones-utilitarias).
+
+## Instalación
+
+```bash
+pnpm install
+```
+
+## Ejecución
+
+```bash
+pnpm dev
+```
+
+## Licencia
+
+MIT
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
