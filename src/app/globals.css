@@ -41,6 +41,7 @@
 	--radius-lg: var(--radius);
 	--radius-xl: calc(var(--radius) + 4px);
 
+	/* //custom values */
 	--animate-appear: appear 1s ease-in-out;
 	@keyframes appear {
 		from {
@@ -59,6 +60,10 @@
 			transform: translateX(0%);
 		}
 	}
+}
+
+@utility bg-hero-home {
+	background-image: url("/img/home.png");
 }
 
 :root {
