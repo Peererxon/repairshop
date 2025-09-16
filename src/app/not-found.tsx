@@ -3,6 +3,7 @@ export const metadata = {
 	title: "Page Not Found",
 	description: "This page could not be found.",
 };
+
 export default function NotFound() {
 	return (
 		<div className="px-2 w-full">
