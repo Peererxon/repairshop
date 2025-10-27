@@ -10,6 +10,7 @@ import {
 	type selectCustomerSchemaType,
 } from "@/zod-schemas/customer";
 import { InputWithLabel } from "@/components/inputs/InputWithLabel";
+import { TextAreaWithLabel } from "@/components/inputs/TextArea";
 
 type Props = {
 	customer?: selectCustomerSchemaType;
@@ -49,7 +50,7 @@ export default function CustomerForm({ customer }: Props) {
 					onSubmit={form.handleSubmit(submitForm)}
 					className="flex flex-col md:flex-row gap-4 md:gap-8"
 				>
-					<p>{JSON.stringify(form.getValues())}</p>
+					{/* <p>{JSON.stringify(form.getValues())}</p> */}
 					<div className="flex flex-col gap-4 w-full max-w-xs">
 						<InputWithLabel<insertCustomerSchemaType>
 							fieldTitle="First Name"
@@ -90,7 +91,12 @@ export default function CustomerForm({ customer }: Props) {
 						<InputWithLabel<insertCustomerSchemaType>
 							fieldTitle="Phone"
 							nameInSchema="phone"
-						/>{" "}
+						/>
+						<TextAreaWithLabel<insertCustomerSchemaType>
+							fieldTitle="Notes"
+							nameInSchema="notes"
+						/>
+
 						<div className="flex gap-2">
 							<Button
 								type="submit"
